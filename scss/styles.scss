@@ -1,0 +1,61 @@
+@import "_fonts";
+@import "_page-header";
+@import "_banner";
+@import "_company";
+@import "_price";
+@import "_photos";
+@import "_form";
+@import "_other";
+@import "_mixins";
+
+html {
+    font-size: 62.5%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1216px;
+    width: 100%;
+    margin: 0 auto;
+    // margin-left: 304px;
+    // margin-right: auto;
+    padding: 3px 48px;
+    // padding-left: 25rem;
+    // padding-right: 3.2rem;
+
+    @include breakpoint(376px) {
+        padding: 3px 16px;
+    }
+
+
+    &-864 {
+        padding-right: 35.2rem;
+
+        @include breakpoint(376px) {
+            padding: 3px 16px;
+        }
+    }
+}
+
+.beboss-head__active-section__text{
+    font-size: 1.8rem;
+}
+
+.btn{
+    font-size: 16px;
+    padding: 8px 16px;
+}

@@ -1,0 +1,87 @@
+@import "_mixins";
+
+.price {
+
+
+    &__content {
+        padding: 2.4rem;
+        background: rgba(30, 160, 30, 0.1);
+        border-radius: 16px;
+
+
+        &-table {
+            margin-top: 2.5rem;
+
+
+            &-row {
+                padding-top: 1.6rem;
+                display: block;
+
+                &:first-child {
+                    padding-top: 0;
+                }
+
+                @include breakpoint(376px) {
+                   display: flex;
+                   flex-direction: column;
+                }
+            }
+
+            &-title-cell {
+                width: 20rem;
+                vertical-align: top;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+
+
+                color: rgba(0, 0, 0, 0.52);
+
+                
+            }
+
+            &-value-cell {
+                vertical-align: top;
+                font-family: Arial;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+
+                padding-left: 2.4rem;
+
+                @include breakpoint(376px) {
+                    padding-left: 0;
+                }
+            }
+
+        }
+
+        &-download {
+            margin-top: 2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &-icon {
+                margin-right: 2.4rem;
+            }
+
+            &-link{
+
+                @include breakpoint(376px) {
+                    width: 90%;
+                    justify-content: flex-start;
+                 }
+            }
+
+            @include breakpoint(376px) {
+                justify-content: flex-start;
+             }
+        }
+    }
+}

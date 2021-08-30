@@ -1,0 +1,55 @@
+.company {
+    
+
+    &__wrapper {
+        display: flex;
+        padding-top: 11.8rem;
+        padding-bottom: 3rem;
+    }
+
+    &__content{
+        width: 100%;
+
+        &-description{
+            max-width: 83.2rem;
+            padding-top: 2.4rem;
+            line-height: 40px !important;
+        }
+
+        &-link{
+            padding-top: 1.6rem;
+        }
+    }
+
+    &-indicators{
+        max-width: 25.6rem;
+        width: 100%;
+        margin-left: 3.2rem;
+
+        &__list{
+            display: flex;
+            flex-direction: column;
+            &-item{
+                
+                margin: .8rem 0;
+
+                &-text{
+                    width: 105%;
+                }
+
+                &:first-child{
+                    margin-top: 1.6rem;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+
+        @include breakpoint(376px) {
+            display: none;
+        }
+    }
+}
